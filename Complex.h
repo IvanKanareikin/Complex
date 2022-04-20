@@ -7,18 +7,18 @@
 
 using namespace std;
 
-struct Complex {
-	double im = 0;
-	double re = 0;
-
+class Complex{
+private:
+	double re;
+	double im;
+public:
+	Complex();
+	~Complex();
 	Complex sum(Complex cmp1);
-
-	Complex sub(Complex cmp1);
-
 	Complex mult(Complex cmp1);
-
-	Complex div(Complex cmp1);
-
+	Complex del(Complex cmp1);
+	void setComplex(int valueRe, int valueIm);
+	double mod();
 	static void print(Complex n1);
 };
 
